@@ -1,0 +1,368 @@
+*{
+    padding:0;
+    margin:0;
+}
+ul{
+    list-style:none;
+}
+header{
+    background-color: #222;
+    height:43px;
+    color:#9d9d9d;
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+}
+header .container{
+    margin:0 auto;
+}
+header .container a{
+    color:#9d9d9d;
+    text-decoration:none;
+    font-size:14px;
+    line-height:43px;
+}
+header .container a:hover{
+    color:#fff;
+}
+header .container h1{
+    float:left;
+    font-size:unset;
+    clear:right;
+    padding:0 15px;
+}
+header .container h1 a{
+    font-size:18px;
+    font-weight:normal;
+}
+header .about{
+    float:right;
+    padding-right:15px;
+}
+header .list{
+    width:690px;
+    margin:0 auto;
+    overflow:hidden;
+}
+
+header .list ul li{
+    float:left;
+    padding:0 15px;
+    position:relative;
+}
+header .list ul li:nth-last-child(1){
+    display:none;
+}
+header .list ul li a{
+    display: block;
+}
+header .list ul li a.reddot:after{
+    content: "";
+    position: absolute;
+    top: 10px;
+    right: 5px;
+    padding: 3px;
+    z-index: 9999999;
+    background: #d9534f;
+    border-radius: 50%;
+    font-size: 0;
+    line-height: 0;
+    border: 1px solid #d43f3a;
+    
+}
+
+
+
+.navbar-toggle {
+    display:none;
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 4.5px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color:#222;
+    background-image: none;
+    border: 1px solid #444;
+    border-radius: 4px;
+    outline:none;
+    cursor:pointer;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+.navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+.navbar-toggle .icon-bar+.icon-bar {
+    margin-top: 4px;
+}
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+#banner{
+    width:100%;
+    height:385px;
+    background:linear-gradient(45deg,#020031,#6d3353);
+    text-align:center;
+    padding-top:100px;
+    color:#fff;
+}
+#banner h2{
+    font-size:100px;
+    letter-spacing: -2px;
+}
+#banner p{
+    font-size: 30px;
+    font-weight: 200;
+    line-height: 2.25;
+}
+#banner h3{
+    width:290px;
+    height:54px;
+    background-color:#3276ad;
+    margin: 20px auto 10px;;
+    line-height: 54px;
+    border-radius: 10px;
+    box-shadow: 0px 5px 2px #23527c;
+    cursor:pointer;
+}
+#banner h3:hover{
+    background-color:#286090;
+    transition:all 0.3s;
+}
+#banner a{
+    color:#92889a;
+    font-size:13px;
+}
+
+#contentswrap{
+    width:100%;
+}
+#contentswrap .inner{
+    width:1150px;
+    margin:0 auto;
+    text-align:center;
+    padding-top:60px;
+}
+#contentswrap .inner h2{
+    font-size:42px;
+    letter-spacing:-1px;
+    font-weight: normal;
+}
+#contentswrap .inner>p{
+    margin: 0 auto 10px;
+    box-sizing: border-box;
+    font-weight: 200;
+    font-size: 14px;
+    color: #333;
+    padding: 10px 0;
+    border-bottom: 1px solid #ddd;
+    width: 60%;
+}
+#contentswrap .recommends{
+    width:100%;
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-around;
+}
+#contentswrap .recommends .cols{
+    width: 260px;
+    height:340px;
+    margin-top: 30px;
+    padding: 5px;
+    border: 1px solid #ddd;
+    overflow:hidden;
+}
+#contentswrap .recommends .cols img{
+    max-width:100%;
+}
+#contentswrap .recommends .cols h3{
+    color: #337ab7;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.1;
+    text-align: center;
+    padding-top: 20px;
+}
+#contentswrap .recommends .cols h3:hover{
+    color:#23527C;
+}
+#contentswrap .recommends .cols a{
+    font-weight: 400;
+    line-height: 2;
+    color: #777;
+    font-size: 15px;
+}
+#contentswrap .recommends .cols p{
+    color: #555;
+    line-height: 1.42857143;
+    font-size: 14px;
+    padding-top: 6px;
+}
+
+footer{
+    width:100%;
+    margin-top:50px;
+    border-top:1px solid #ddd;
+    padding-top:40px;
+}
+footer .container{
+    width:1150px;
+    margin:0 auto;
+}
+footer .container .above{
+    overflow: hidden;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 25px;
+}
+footer .left{
+    float:left;
+}
+footer .left p{
+    color: #777;
+    font-weight:normal;
+    font-size:14px;
+    line-height:26px;
+}
+footer .right{
+    float:right;
+}
+footer .right .cols{
+    float:left;
+    width:150px;
+}
+footer .right .cols p{
+    color: #563d7c;
+    font-size: 16px;
+    line-height: 2;
+    font-weight: normal;
+}
+footer .right .cols li{
+    color: #777;
+    cursor: pointer;
+    font-size: 14px;
+    line-height: 1.62857143;
+}
+footer .container .copyright{
+    width: 100%;
+    text-align: center;
+    line-height: 65px;
+    padding-bottom: 20px;
+    color: #777;
+    font-size: 13px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (min-width:1200px){
+    .container{
+        width:1170px;
+    }
+}
+
+@media screen and (max-width:1150px){
+    #contentswrap .inner{
+        width:970px;
+    }
+    footer .container{
+        width:970px;
+    }
+    footer .right .cols{
+        width:128px;
+    }
+}
+
+@media screen and (max-width:991px){
+    header .container h1,header .container .about{
+        display:none;
+    }
+    #banner h2{
+        font-size:88px;
+    }
+    #banner p{
+        font-size:25px;
+    }
+    #contentswrap .inner{
+        width:740px;
+    }
+    #contentswrap .inner .cols{
+        width:280px;
+    }
+    footer .container{
+        width:600px;
+    }
+    footer .left{
+        float:unset;
+    }
+    footer .right{
+        float:unset;
+        margin-top:10px;
+    }
+}
+
+@media screen and (max-width:770px){
+    header .container h1,.navbar-toggle{
+        display:block;
+    }
+    header .list{
+        display:none;
+        position:absolute;
+        top:43px;
+        left:0;
+        background:#222;
+        border-top:1px solid #393939;
+        width:100%;
+    }
+    header .list ul li{
+        float:unset;    
+    }
+    #banner h2{
+        font-size:75px;
+    }
+    #banner p{
+        font-size:20px;
+    }
+    #contentswrap .inner{
+        width:450px;
+    }
+    #contentswrap .inner .cols{
+        width:310px;
+    }
+    footer .container{
+        width:400px;
+    }
+    footer .right .cols{
+        float:unset;
+        margin-top:10px;
+    }
+}
